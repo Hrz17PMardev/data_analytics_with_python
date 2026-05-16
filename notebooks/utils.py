@@ -26,4 +26,11 @@ def get_dependant_category(n_dependants):
     
 def set_senior_flag(age):
         return 'Senior' if age >= 60 else 'Non-Senior'
+
+
+def capitalize_words(s):
+    """Return a string with each word's first letter uppercase."""
+    if s is None:
+        return s
+    return " ".join(word.capitalize() for word in str(s).split())
     
